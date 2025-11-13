@@ -41,8 +41,8 @@ if __name__ == "__main__":
     if not hasattr(args, "out_dir"):
         args.out_dir = args.datasets_root / "SV2TTS" / "vocoder"
 
-    if args.cpu:
-        # Hide GPUs from Pytorch to force CPU processing
-        os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+    # if args.cpu:
+    #     # Hide GPUs from Pytorch to force CPU processing
+    #     os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 
     run_synthesis(args.in_dir, args.out_dir, args.syn_model_fpath, modified_hp)
