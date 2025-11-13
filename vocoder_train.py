@@ -41,12 +41,12 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Process the arguments
-    if not hasattr(args, "syn_dir"):
-        args.syn_dir = args.datasets_root / "SV2TTS" / "synthesizer"
-    if not hasattr(args, "voc_dir"):
-        args.voc_dir = args.datasets_root / "SV2TTS" / "vocoder"
-    del args.datasets_root
-    args.models_dir.mkdir(exist_ok=True)
+    # if not hasattr(args, "syn_dir"):
+    #     args.syn_dir = args.datasets_root / "SV2TTS" / "synthesizer"
+    # if not hasattr(args, "voc_dir"):
+    #     args.voc_dir = args.datasets_root / "SV2TTS" / "vocoder"
+    # del args.datasets_root
+    # args.models_dir.mkdir(exist_ok=True)
 
     # Run the training
     print_args(args, parser)
