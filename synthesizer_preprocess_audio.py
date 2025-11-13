@@ -34,8 +34,8 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     # Process the arguments
-    if not hasattr(args, "out_dir"):
-        args.out_dir = args.datasets_root.joinpath("SV2TTS", "synthesizer")
+    # if not hasattr(args, "out_dir"):
+    #     args.out_dir = args.datasets_root.joinpath("SV2TTS", "synthesizer")
 
     # Create directories
     assert args.datasets_root.exists()
