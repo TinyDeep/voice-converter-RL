@@ -59,12 +59,12 @@ if __name__ == "__main__":
     args.out_dir.mkdir(exist_ok=True, parents=True)
 
     # Preprocess the datasets
-    print_args(args, parser)
-    preprocess_func = {
-        "librispeech_other": preprocess_librispeech,
-        "voxceleb1": preprocess_voxceleb1,
-        "voxceleb2": preprocess_voxceleb2,
-    }
+    # print_args(args, parser)
+    # preprocess_func = {
+    #     "librispeech_other": preprocess_librispeech,
+    #     "voxceleb1": preprocess_voxceleb1,
+    #     "voxceleb2": preprocess_voxceleb2,
+    # }
     args = vars(args)
     for dataset in args.pop("datasets"):
         print("Preprocessing %s" % dataset)
